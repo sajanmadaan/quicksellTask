@@ -1,0 +1,161 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir LT Std", sans-serif;
+  background-color: rgb(249, 249, 249);
+}
+
+div,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+} 
+a {
+  text-decoration: none;
+}
+
+
+/* counter */
+
+.mainBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.part {
+  height: 56px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(178, 66, 66);
+}
+
+.dec {
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+}
+
+.display {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+  background-color: rgb(251, 232, 232);
+}
+
+input[type="number"] {
+  font-weight: 900;
+  font-size: 21px;
+  color: rgb(178, 66, 66);
+}
+
+
+.add {
+  border-radius: 0 8px 8px 0;
+  background-color: rgb(178, 66, 66);
+}
+
+.decCount {
+  width: 7px;
+  height: 29px;
+  font-weight: 900;
+  font-size: 21px;
+  color: rgb(178, 66, 66);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.addCount {
+  width: 14px;
+  height: 29px;
+  font-weight: 900;
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+/* counterValuse */
+
+.counterValue {
+  position: absolute;
+  height: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+/* loader */
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.spin {
+  width: 16px;
+  height: 16px;
+  color: black;
+  border: 1.5px  black;
+  border-radius: 50%;
+  animation: 1s spin linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.para {
+  height: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  margin-left: 15px;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+
+/* mainApp */
+
+.Artboard{
+  width:257px;
+  height:130px;
+  background-color: white;
+  margin: auto;
+  margin-top: 10%;
+}
